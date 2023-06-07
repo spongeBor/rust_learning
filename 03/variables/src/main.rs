@@ -42,8 +42,57 @@ fn main() {
   let first = a[0];
   let second = a[1];
   another_function(5);
+  let x = five();
+  println!("{x}");
+
+  // 控制流
+  // if
+  let number = 3;
+  if number < 5 {
+    println!("condition was true");
+  } else {
+    println!("condition was false");
+  }
+  // 必须要返回bool类型，不支持隐式转换
+  // if number {
+  //   println!("12321");
+  // }
+  if number != 0 {
+    println!("12321321");
+  }
+  let condition = true;
+  let number = if condition {5} else {6};
+  println!("{number}");
+
+  // 循环
+  let mut counter = 0;
+  let result = loop {
+    counter += 1;
+    if counter == 10 {
+      break counter * 2;
+    }
+  };
+  println!("{result}");
+  //for
+  let a = [10, 20, 30, 40, 50];
+  for element in a.iter() {
+    println!("{element}");
+  }
+  for number in (1..4).rev() {
+    println!("{number}");
+  }
 }
 
 fn another_function(x: i32) {
-  println!("Another function.{x}");
+  let x = 5;
+  let y = {
+    let x = 3;
+    x + 1
+  };
+  println!("Another function.{x}, {y}");
+}
+
+// rust 函数返回值等于最后一个表达式的值
+fn five() -> i32 {
+  5 // 不能加分号，加分号就是语句了
 }
