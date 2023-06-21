@@ -1,0 +1,14 @@
+[package]
+name = "test_release"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["guoyubo00737@163.com"]
+description = "A test for release"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[profile.dev]
+opt-level = 1

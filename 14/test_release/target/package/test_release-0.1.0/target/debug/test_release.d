@@ -1,0 +1,1 @@
+/Users/guoyubo/project/rust/14/test_release/target/package/test_release-0.1.0/target/debug/test_release: /Users/guoyubo/project/rust/14/test_release/target/package/test_release-0.1.0/src/lib.rs /Users/guoyubo/project/rust/14/test_release/target/package/test_release-0.1.0/src/main.rs
